@@ -11,7 +11,7 @@ public class DAO {
 	// Alt + shift + y QUEBRA AUTO LINHA
 	private String url = "jdbc:mysql://localhost/agendacontatosdb?useTimezone=true&serverTimezone=UTC";
 	private String user = "root";
-	private String password = "8C3aN75m";
+	private String password = "${PASS}";
 
 	// Métodos de conexão
 	private Connection conectar() {
