@@ -3,14 +3,14 @@ package Model;
 public class JavaBeans {
 	private int id;
 	private String nome;
-	private int tel;
+	private String tel;
 	private String email;
 	
 	public JavaBeans() {
 		super();
 	}
 	
-	public JavaBeans(int id, String nome, int tel, String email) {
+	public JavaBeans(int id, String nome, String tel, String email) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -26,7 +26,7 @@ public class JavaBeans {
 		return nome;
 	}
 	
-	public int getTel() {
+	public String getTel() {
 		return tel;
 	}
 	
@@ -42,7 +42,7 @@ public class JavaBeans {
 		this.nome = nome;
 	}
 	
-	public void setTel(int tel) {
+	public void setTel(String tel) {
 		this.tel = tel;
 	}
 	
