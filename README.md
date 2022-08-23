@@ -3,9 +3,13 @@ Uma agenda de contatos feita com Java
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=RED&style=for-the-badge">
 </p>
+
 ### Disclaimer
 Para quem quiser utilizar o projeto entre na classe DAO e coloque sua própria senha do banco de dados. aceito PR's.
+
 ##
+
+
 O cliente atrávez de uma url faz uma
 requisição ao servidor.
 Essa requisição chega a um container e 
