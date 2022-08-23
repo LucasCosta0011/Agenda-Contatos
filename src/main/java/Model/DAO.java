@@ -97,7 +97,8 @@ public class DAO {
 				// Populando o ArrayList
 				contatos.add(new JavaBeans(
 						res.getInt("id"),
-						res.getString("nome"), 						res.getString("tel"), 
+						res.getString("nome"),
+						res.getString("tel"),
 						res.getString("email")));
 			}
 			conexao.close();
