@@ -16,14 +16,14 @@ Essa requisição chega a um container e
 cria dois objetos (req, res)
 Esses objetos são encaminhados ao Servlet.
 Definição de Servlet:
-(
- Trata a requisição e devolve a resposta.
- Um servlet recebe requições, processa as informações e    produz um conteúdo dinâmico.
 
- O Servlet é uma classe Java capaz de executar
+ - Trata a requisição e devolve a resposta.
+ - Um servlet recebe requições, processa as informações e    produz um conteúdo dinâmico.
+
+ - O Servlet é uma classe Java capaz de executar
  a linguagem Java e tbm gerar códigos html,
  formando páginas dinâmicas.
-)
+
 Muito comum ter um banco no servidor Java.
 
 Java EE é um conjunto de específicações de uma
@@ -33,10 +33,10 @@ Além do Servlet é possível criar app web com Java
 usando Java Server Pages
 
 Ambiente de desenvolvimento
-JDK (Java development Kit)
-Eclipse IDE Comminity 2022
-Apache tomcat 9
-MySQL 8.0.20
+- JDK (Java development Kit)
+- Eclipse IDE Comminity 2022
+- Apache tomcat 9
+- MySQL 8.0.20
 
 Sintaxe dos elementos JSP
 Scriplet : <%  %>
@@ -46,14 +46,14 @@ Declarações: <%!   %>
 Expressões: <%=   %>
 
 Tecs
-Servidor Tomcat
-Java EE - Servlet e JSP
-IDE eclipse
-Mysql (CRUD - Create, read, update e delete)
-MVC (Modal, View e Controller)
-JavaBeans
-JDBC (Java Database Connectivity)
-iText 5.5.13.3
+- Servidor Tomcat
+- Java EE - Servlet e JSP
+- IDE eclipse
+- Mysql (CRUD - Create, read, update e delete)
+- MVC (Modal, View e Controller)
+- JavaBeans
+- JDBC (Java Database Connectivity)
+- iText 5.5.13.3
 
 127.0.0.1:3306/agendacontatosdb
 
@@ -67,10 +67,10 @@ JDBC
 - Interface Connection (Cria uma sessão entre o Java e o DB)
 
 Módulo de conexão
--Driver(Tipo DB) 
--URL(IP ou domínio do server) 
--Banco(Nome DB)
--Autenticação(Usuário e senha)
+- Driver(Tipo DB) 
+- URL(IP ou domínio do server) 
+- Banco(Nome DB)
+- Autenticação(Usuário e senha)
 
 Verificar a versão do MySQL
 Entre no MySQL workbench conecte no banco
@@ -94,13 +94,13 @@ CRTL + SHIFT + O importa automaticamente
 
 Config eclipse
 
--Project -> Build Automatically
--Window -> Perspective -> Reset Perspective
--Window -> Preferences -> General -> Web Browser
+- Project -> Build Automatically
+- Window -> Perspective -> Reset Perspective
+- Window -> Preferences -> General -> Web Browser
 -> Use External Web Browser
 
 Gerando documentação no eclipse
-Help -> eclipse marketplace ->
+- Help -> eclipse marketplace ->
 buscar por -> jautodoc 
 reiniciar o eclipse
 
