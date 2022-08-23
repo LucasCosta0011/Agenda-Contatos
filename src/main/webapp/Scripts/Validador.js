@@ -13,7 +13,7 @@ function validar(){
 		alert("Preencha o campo Nome!");
 		formContato.nome.style.backgroundColor = "yellow";
 		formContato.nome.focus();
-		// para o form não enviar para camada controller
+		// para não submeter o form a camada controller
 		return false;
 	}else if(tel.trim() === ""){
 		alert("Preencha o campo Telefone!");
@@ -22,7 +22,7 @@ function validar(){
 		return false;
 	}else{
 		
-		// Envia o formulário para o controller
+		// Envia o formulário para a camada controller
 		document.forms["formContato"].submit();
 	}
 }

@@ -1,13 +1,11 @@
 /**
- * Confirmar excluir
+ * Confirmar exclusao
  * @author Lucas Costa
+ * @param id int
  */
 
-function confirmar(){
-	let excluir = document.querySelector("#excluir");
+function confirmar(id){
 	if(confirm("Deseja realmente excluir o contato?")){
-		document.forms['formContato'].submit();
-	}else{
-		excluir.setAttribute('href', 'main');
+		window.location.href = "delete?id=" + id;
 	}
 }

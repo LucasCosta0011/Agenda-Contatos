@@ -3,7 +3,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%
-ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos");
+	@ SuppressWarnings("unchecked")
+	ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos");
 %>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,7 +26,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 					<th>Nome</th>
 					<th>Telefone</th>
 					<th>E-mail</th>
-					<th colspan="2">Opções</th>
+					<th>Opções</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -38,10 +39,12 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 					<td><%=lista.get(i).getNome()%></td>
 					<td><%=lista.get(i).getTel()%></td>
 					<td><%=lista.get(i).getEmail()%></td>
-					<td><a href="select?id=<%=lista.get(i).getId()%>"
-						class="btnAcessar">Editar</a></td>
-					<td><a id="excluir" href="delete?id=<%=lista.get(i).getId()%>"
-					class="btnCancelar" onclick="confirmar()">Excluir</a></td>
+					<td>
+						<a href="select?id=<%=lista.get(i).getId()%>"
+						class="btnAcessar">Editar</a>
+						<a id="excluir" href="javascript: confirmar(<%=lista.get(i).getId()%>)"
+					class="btnCancelar">Excluir</a>
+					</td>
 				</tr>
 				<%
 				}

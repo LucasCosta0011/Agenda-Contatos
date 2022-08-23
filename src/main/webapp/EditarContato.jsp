@@ -18,7 +18,7 @@ JavaBeans contato = (JavaBeans) request.getAttribute("contato");
 		<form name="formContato" action="update">
 			<table>
 				<tr>
-					<td><input id="txtId" type="text" name="id" placaholder="ID"
+					<td><input id="txtId" type="text" name="id" placeholder="ID"
 						value="<%=contato.getId()%>" readonly /></td>
 				</tr>
 				<tr>
