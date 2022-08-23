@@ -64,7 +64,7 @@ public class DAO {
 	
 	// CRUD - READ //
 	// Selecionar contato //
-	public void buscarContato(JavaBeans contato) {
+	public void selecionarContato(JavaBeans contato) {
 		String sqlBuscarContato = "SELECT * FROM contatos WHERE id LIKE ?";
 		try {
 			Connection conexao = conectar();

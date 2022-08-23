@@ -112,7 +112,7 @@ public class Controller extends HttpServlet {
 	// Selecionar contato
 	protected void selecionarContato(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    contato.setId(Integer.parseInt(request.getParameter("id")));
-		dao.buscarContato(contato);
+		dao.selecionarContato(contato);
 		request.setAttribute("contato", contato);
 		RequestDispatcher rd = request.getRequestDispatcher("EditarContato.jsp");
 		rd.forward(request, response);
