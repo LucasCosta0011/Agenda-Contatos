@@ -7,24 +7,27 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Criar novo contato</h1>
-	<form name="formContato" action="insert">
-		<table>
-			<tr>
-				<td><input type="text" name="nome" placeholder="Nome"
-					class="caixa1" /></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="tel" placeholder="Telefone"
-					class="caixa2" /></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="email" placeholder="E-mail"
-					class="caixa1" /></td>
-			</tr>
-		</table>
-		<input type="button" value="Adicionar" class="btnAcessar" onclick="validar()" />
-	</form>
+	<div>
+		<h1>Criar novo contato</h1>
+		<form name="formContato" action="insert">
+			<table>
+				<tr>
+					<td><input type="text" name="nome" placeholder="Nome"
+						class="caixa1" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="tel" placeholder="Telefone"
+						class="caixa2" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="email" placeholder="E-mail"
+						class="caixa1" /></td>
+				</tr>
+			</table>
+			<input type="button" value="Adicionar" class="btnAcessar"
+				onclick="validar()" />
+		</form>
+	</div>
 	<script type="text/javascript" src="Scripts/Validador.js"></script>
 </body>
 </html>
